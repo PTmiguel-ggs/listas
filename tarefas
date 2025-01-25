@@ -1,16 +1,30 @@
+<input type="checkbox" name="vei">
+
+
+
 <input id="input" placeholder="Digite um item">
-<button id="botao" onclick="nomedafuncao()">adicionar</button>
-<div id="lista"></div>
+<button id="botao" onclick="additem()">adicionar</button>
+<div id="lista">
+
+</div>
 
 <script>
-    function nomedafuncao() {
-        let lista = document.getElementById("lista")
+    function additem() {
+
         let input = document.getElementById("input")
+        let lista = document.getElementById("lista")
 
-        let paragrafo = document.createElement("p")
-        paragrafo.innerText = input.value
-        lista.appendChild(paragrafo)
+        let div = document.createElement("div")
+        let texto = document.createTextNode(input.value)
+        let check = document.createElement("input")
+        check.type = "checkbox"
+        check.value = input.value
 
+        div.appendChild(check)
+        div.appendChild(texto)
+
+        lista.appendChild(div)
+        input.value = ""
     }
 </script>
 
