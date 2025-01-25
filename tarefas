@@ -1,11 +1,7 @@
-<input type="checkbox" name="vei">
-
-
-
 <input id="input" placeholder="Digite um item">
 <button id="botao" onclick="additem()">adicionar</button>
 <div id="lista">
-
+    <link rel="stylesheet" href="style.css">
 </div>
 
 <script>
