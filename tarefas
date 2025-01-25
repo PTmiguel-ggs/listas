@@ -28,4 +28,8 @@
     #lista {
         border: solid 2px #000;
     }
+
+    div:has(input:checked) {
+        color: green;
+    }
 </style>
