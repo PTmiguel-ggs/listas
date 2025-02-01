@@ -22,6 +22,11 @@
         lista.appendChild(div)
         input.value = ""
     }
+    function mike2() {
+        window.alert("site ta pronto")
+
+    }
+    window.addEventListener("load", mike2())
 </script>
 
 <style>
@@ -30,6 +35,6 @@
     }
 
     div:has(input:checked) {
-        color: green;
+        color: rgb(255, 5, 5);
     }
 </style>
